@@ -28,7 +28,7 @@ jobs:
       working-directory: myapp
     - run: npm run build --if-present
       working-directory: myapp
-     - run: npm test -- --coverage
+    - run: npm test -- --coverage
       working-directory: myapp
     - run: bash <(curl -s https://codecov.io/bash)
 
